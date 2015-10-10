@@ -1,0 +1,5 @@
+// at root
+
+cd ChartCommon
+nuget pack ChartCommon.csproj -Prop Configuration=Release
+nuget push Semantic.ChartCommon.1.0.0.0.nupkg
