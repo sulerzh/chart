@@ -10,4 +10,4 @@ using System.Security;
 [assembly: AssemblyTitle("Semantic.ChartCommon")]
 [assembly: AssemblyDescription("Semantic.ChartCommon 1.0.3230.1001")]
 [assembly: AssemblyFileVersion("1.0.3230.1001")]
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.1.0")]

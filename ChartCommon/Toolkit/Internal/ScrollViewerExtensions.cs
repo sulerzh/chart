@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Animation;
 
-namespace Semantic.Reporting.Common.Toolkit.Internal
+namespace Microsoft.Reporting.Common.Toolkit.Internal
 {
     public static class ScrollViewerExtensions
     {

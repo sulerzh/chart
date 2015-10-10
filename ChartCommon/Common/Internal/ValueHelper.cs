@@ -1,5 +1,4 @@
-﻿
-using Semantic.Reporting.Common.Toolkit.Internal;
+﻿using Microsoft.Reporting.Common.Toolkit.Internal;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

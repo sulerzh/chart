@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows.Data;
 
-namespace Semantic.Reporting.Common.Toolkit.Internal
+namespace Microsoft.Reporting.Common.Toolkit.Internal
 {
     public class HighContrastCanvasScrollBarOpacityConverter : IValueConverter
     {

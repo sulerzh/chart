@@ -1,4 +1,4 @@
-﻿using Semantic.Reporting.Common.Toolkit.Internal;
+﻿using Microsoft.Reporting.Common.Toolkit.Internal;
 using Semantic.Reporting.Windows.Common.Internal.Properties;
 using System;
 using System.Collections;

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Semantic.Reporting.Common.Toolkit.Internal
+namespace Microsoft.Reporting.Common.Toolkit.Internal
 {
     internal static class FunctionalProgramming
     {

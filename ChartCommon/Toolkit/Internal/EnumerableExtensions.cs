@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Semantic.Reporting.Common.Toolkit.Internal
+namespace Microsoft.Reporting.Common.Toolkit.Internal
 {
     internal static class EnumerableExtensions
     {

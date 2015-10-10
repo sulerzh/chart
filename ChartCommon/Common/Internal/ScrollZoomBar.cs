@@ -757,7 +757,7 @@ namespace Semantic.Reporting.Windows.Common.Internal
             }
         }
 
-        internal new void UpdateVisualState()
+        internal void UpdateVisualState()
         {
             this.UpdateVisualState(true);
         }
@@ -767,7 +767,7 @@ namespace Semantic.Reporting.Windows.Common.Internal
             return VisualStateManager.GoToState((FrameworkElement)this, stateName, useTransitions);
         }
 
-        internal new virtual void UpdateVisualState(bool useTransitions)
+        internal virtual void UpdateVisualState(bool useTransitions)
         {
             if (!this.IsEnabled)
             {

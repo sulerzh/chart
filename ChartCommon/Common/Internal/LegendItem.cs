@@ -652,17 +652,26 @@ namespace Semantic.Reporting.Windows.Common.Internal
             return VisualStateManager.GoToState((FrameworkElement)this, stateName, useTransitions);
         }
 
-        internal new virtual void ChangeVisualState(bool useTransitions)
+        internal virtual void ChangeVisualState(bool useTransitions)
         {
-            if (!this.IsEnabled)
+            if (!base.IsEnabled)
+            {
                 this.GoToState("Disabled", useTransitions);
+            }
             else
+            {
                 this.GoToState("Normal", useTransitions);
-            if (this.IsFocused && this.IsEnabled)
+            }
+            if (this.IsFocused && base.IsEnabled)
+            {
                 this.GoToState("Focused", useTransitions);
+            }
             else
+            {
                 this.GoToState("Unfocused", useTransitions);
+            }
         }
+
 
         internal void OnPropertyChanged(string propertyName)
         {

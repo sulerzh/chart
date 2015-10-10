@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace Semantic.Reporting.Common.Toolkit.Internal
+namespace Microsoft.Reporting.Common.Toolkit.Internal
 {
     public class HighContrastColorConverter : IValueConverter
     {

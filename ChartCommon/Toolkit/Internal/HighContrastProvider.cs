@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Semantic.Reporting.Common.Toolkit.Internal
+namespace Microsoft.Reporting.Common.Toolkit.Internal
 {
     public class HighContrastProvider : DependencyObject
     {
