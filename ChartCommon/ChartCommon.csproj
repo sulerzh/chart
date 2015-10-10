@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Projects\directx\lib\x86\VISUALIZATIONCHARTCOMMON.DLL-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3A12B49-12B9-4D63-9372-59B3C16B22D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Semantic.ChartCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>16.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Semantic.Reporting</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Windows\Common\Internal\BindingHelper.cs" />
+    <Compile Include="Windows\Common\Internal\CanvasItemsControl.cs" />
+    <Compile Include="Windows\Common\Internal\DataValueType.cs" />
+    <Compile Include="Windows\Common\Internal\DebugMessageTypes.cs" />
+    <Compile Include="Windows\Common\Internal\DebugOut.cs" />
+    <Compile Include="Windows\Common\Internal\DoubleHelper.cs" />
+    <Compile Include="Windows\Common\Internal\DoubleR10.cs" />
+    <Compile Include="Windows\Common\Internal\EnumerableFunctions.cs" />
+    <Compile Include="Windows\Common\Internal\AutoBool.cs" />
+    <Compile Include="Windows\Common\Internal\GeometryExtensions.cs" />
+    <Compile Include="Windows\Common\Internal\IItemsBinder.cs" />
+    <Compile Include="Windows\Common\Internal\ItemsBinder.cs" />
+    <Compile Include="Windows\Common\Internal\INotifyTreeChanged.cs" />
+    <Compile Include="Windows\Common\Internal\Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Common\Internal\TreeChangedEventArgs.cs" />
+    <Compile Include="Windows\Common\Internal\INotifyValueChanged.cs" />
+    <Compile Include="Windows\Common\Internal\IAutomationNameProvider.cs" />
+    <Compile Include="Windows\Common\Internal\IUpdatable.cs" />
+    <Compile Include="Windows\Common\Internal\MathHelper.cs" />
+    <Compile Include="Windows\Common\Internal\ObjectPool.cs" />
+    <Compile Include="Windows\Common\Internal\Range.cs" />
+    <Compile Include="Windows\Common\Internal\RangeHelper.cs" />
+    <Compile Include="Windows\Common\Internal\RangeEnumerableExtensions.cs" />
+    <Compile Include="Windows\Common\Internal\RectExtensions.cs" />
+    <Compile Include="Windows\Common\Internal\SelectionAdorner.cs" />
+    <Compile Include="Windows\Common\Internal\ValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\Int64ValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\PositiveInt64ValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\NegativeInt64ValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\AbsInt64ValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\DoubleValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\PositiveDoubleValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\NegativeDoubleValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\AbsDoubleValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\DateTimeValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\DateTimeOffsetValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\TimeValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\PositiveTimeValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\NegativeTimeValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\AbsTimeValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\CategoryValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\DefaultValueAggregator.cs" />
+    <Compile Include="Windows\Common\Internal\UIElementExtension.cs" />
+    <Compile Include="Windows\Common\Internal\IUpdateSessionProvider.cs" />
+    <Compile Include="Windows\Common\Internal\UpdateSession.cs" />
+    <Compile Include="Windows\Common\Internal\ValueChangedEventHandler.cs" />
+    <Compile Include="Windows\Common\Internal\ValueChangedEventArgs.cs" />
+    <Compile Include="Windows\Common\Internal\ValueHelper.cs" />
+    <Compile Include="Windows\Common\Internal\ObservableCollectionListSynchronizer`1.cs" />
+    <Compile Include="Windows\Common\Internal\ItemsSourceHelper.cs" />
+    <Compile Include="Windows\Common\Internal\ObservableCollectionSupportingInitialization`1.cs" />
+    <Compile Include="Windows\Common\Internal\OrderedMultipleDictionary.cs" />
+    <Compile Include="Windows\Common\Internal\ResourceDictionaryCollection.cs" />
+    <Compile Include="Windows\Common\Internal\UniqueObservableCollection`1.cs" />
+    <Compile Include="Windows\Common\Internal\NullableConverter.cs" />
+    <Compile Include="Windows\Common\Internal\StringFormatConverter.cs" />
+    <Compile Include="Windows\Common\Internal\AnchoredElement.cs" />
+    <Compile Include="Windows\Common\Internal\AnchorPanel.cs" />
+    <Compile Include="Windows\Common\Internal\ContentPositions.cs" />
+    <Compile Include="Windows\Common\Internal\ILabelControl.cs" />
+    <Compile Include="Windows\Common\Internal\LabelControl.cs" />
+    <Compile Include="Windows\Common\Internal\OutsidePlacement.cs" />
+    <Compile Include="Windows\Common\Internal\RectOrientation.cs" />
+    <Compile Include="Windows\Common\Internal\DisplayUnit.cs" />
+    <Compile Include="Windows\Common\Internal\DisplayUnitSystem.cs" />
+    <Compile Include="Windows\Common\Internal\DefaultDisplayUnitSystem.cs" />
+    <Compile Include="Windows\Common\Internal\Legend.cs" />
+    <Compile Include="Windows\Common\Internal\LegendItem.cs" />
+    <Compile Include="Windows\Common\Internal\LegendSymbol.cs" />
+    <Compile Include="Windows\Common\Internal\PaletteDispenser.cs" />
+    <Compile Include="Windows\Common\Internal\ClippedCanvas.cs" />
+    <Compile Include="Windows\Common\Internal\MarkerControl.cs" />
+    <Compile Include="Windows\Common\Internal\RotatableControl.cs" />
+    <Compile Include="Windows\Common\Internal\ScrollZoomBar.cs" />
+    <Compile Include="Windows\Common\Internal\GloomEffect.cs" />
+    <Compile Include="Windows\Common\Internal\Title.cs" />
+    <Compile Include="Windows\Common\Internal\TextOrientation.cs" />
+    <Compile Include="Windows\Common\Internal\AttachedProperty.cs" />
+    <Compile Include="Windows\Common\Internal\FrameworkElementExtensions.cs" />
+    <Compile Include="Windows\Common\Internal\LayoutUtilities.cs" />
+    <Compile Include="Windows\Common\Internal\MatrixHelper.cs" />
+    <Compile Include="Windows\Common\Internal\MouseClickHelper.cs" />
+    <Compile Include="Windows\Common\Internal\TrackableRenderTransform.cs" />
+    <Compile Include="Windows\Common\Internal\IUnparentedPopupProvider.cs" />
+    <Compile Include="Windows\Common\Internal\VisualTreeHelpers.cs" />
+    <Compile Include="Windows\Common\Internal\IHierarchyVirtualizationHelper.cs" />
+    <Compile Include="Windows\Common\Internal\MarkerType.cs" />
+    <Compile Include="Windows\Common\Internal\PanelElementPool.cs" />
+    <Compile Include="Windows\Common\Internal\StrokeDashType.cs" />
+    <Compile Include="Windows\Common\Internal\VisualUtilities.cs" />
+    <Compile Include="Windows\Common\PivotViewer\Internal\TransformExtensions.cs" />
+    <Compile Include="Windows\Chart\Internal\XamlShims.cs" />
+    <Compile Include="Common.Toolkit.Internal\CollectionHelper.cs" />
+    <Compile Include="Common.Toolkit.Internal\EnumerableExtensions.cs" />
+    <Compile Include="Common.Toolkit.Internal\HighContrastBlackAndWhiteEffect.cs" />
+    <Compile Include="Common.Toolkit.Internal\HighContrastHelper.cs" />
+    <Compile Include="Common.Toolkit.Internal\HighContrastEffectConverter.cs" />
+    <Compile Include="Common.Toolkit.Internal\HighContrastColorConverter.cs" />
+    <Compile Include="Common.Toolkit.Internal\ConverterUtils.cs" />
+    <Compile Include="Common.Toolkit.Internal\HighContrastBrushConverter.cs" />
+    <Compile Include="Common.Toolkit.Internal\HighContrastCanvasScrollBarOpacityConverter.cs" />
+    <Compile Include="Common.Toolkit.Internal\HighContrastInvertColorsEffect.cs" />
+    <Compile Include="Common.Toolkit.Internal\HighContrastTheme.cs" />
+    <Compile Include="Common.Toolkit.Internal\HighContrastProvider.cs" />
+    <Compile Include="Common.Toolkit.Internal\ItemsControlExtensions.cs" />
+    <Compile Include="Common.Toolkit.Internal\MonochromeEffect.cs" />
+    <Compile Include="Common.Toolkit.Internal\VisualTreeExtensions.cs" />
+    <Compile Include="Common.Toolkit.Internal\FunctionalProgramming.cs" />
+    <Compile Include="Common.Toolkit.Internal\ScrollViewerExtensions.cs" />
+    <Compile Include="WeakEventListener.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PixelShaderEffects\gloom.fx" />
+    <Resource Include="PixelShaderEffects\gloom.ps" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Windows\Common\Internal\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="CustomPanels\LabelControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomPanels\CanvasItemsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Legend\LegendItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Legend\LegendSymbol.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Panels\MarkerControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Panels\ScrollZoomBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SelectionAdorner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Title\Title.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

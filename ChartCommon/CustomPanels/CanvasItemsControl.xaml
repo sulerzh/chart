@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Semantic.Reporting.Windows.Common.Internal">
+    <Style x:Key="{x:Type local:CanvasItemsControl}"  TargetType="{x:Type local:CanvasItemsControl}">
+        <Setter Property="ItemsControl.ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <Canvas/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
