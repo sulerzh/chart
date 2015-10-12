@@ -2,4 +2,9 @@
 
 cd ChartCommon
 nuget pack ChartCommon.csproj -Prop Configuration=Release
-nuget push Semantic.ChartCommon.1.0.0.0.nupkg
+nuget push Semantic.ChartCommon.1.0.2.0.nupkg
+
+cd ..
+cd Chart
+nuget pack Chart.csproj -IncludeReferencedProjects -Prop Configuration=Release
+nuget push Semantic.Chart.1.0.0.0.nupkg

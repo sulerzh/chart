@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Projects\directx\lib\x86\VISUALIZATIONCHART.DLL-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC7D6B3B-EEAF-4F18-8731-F1F546B4ABDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Semantic.Chart</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>16.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Semantic.Reporting.Windows</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="System" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chart\Internal\Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Internal\NumericScaleUnit.cs" />
+    <Compile Include="Common\Internal\CategoryScaleUnit.cs" />
+    <Compile Include="Common\Internal\LogarithmicScaleUnit.cs" />
+    <Compile Include="Common\Internal\DateTimeScaleUnit.cs" />
+    <Compile Include="Common\Internal\TimeSpanScaleUnit.cs" />
+    <Compile Include="Chart\Internal\XamlShims.cs" />
+    <Compile Include="Chart\Internal\DependencyPropertyAnimationHelper.cs" />
+    <Compile Include="Chart\Internal\StoryboardInfo.cs" />
+    <Compile Include="Chart\Internal\PropertyAnimator.cs" />
+    <Compile Include="Chart\Internal\Singleton.cs" />
+    <Compile Include="Chart\Internal\SingletonRegistry.cs" />
+    <Compile Include="Chart\Internal\StoryboardGroup.cs" />
+    <Compile Include="Chart\Internal\TickMark.cs" />
+    <Compile Include="Chart\Internal\ChartAreaAutomationPeer.cs" />
+    <Compile Include="Chart\Internal\DataPointAutomationPeer.cs" />
+    <Compile Include="Chart\Internal\SeriesAutomationPeer.cs" />
+    <Compile Include="Chart\Internal\AxesCollection.cs" />
+    <Compile Include="Chart\Internal\IAxisPresenterProvider.cs" />
+    <Compile Include="Chart\Internal\Axis.cs" />
+    <Compile Include="Chart\Internal\AxisCrossingPositionMode.cs" />
+    <Compile Include="Chart\Internal\AxisOrientation.cs" />
+    <Compile Include="Chart\Internal\AxisPosition.cs" />
+    <Compile Include="Chart\Internal\AxisElementPosition.cs" />
+    <Compile Include="Chart\Internal\LabelAutoFit.cs" />
+    <Compile Include="Chart\Internal\AxisMargin.cs" />
+    <Compile Include="Chart\Internal\AxisPresenter.cs" />
+    <Compile Include="Chart\Internal\XYAxisPresenter.cs" />
+    <Compile Include="Chart\Internal\AxisLabelControl.cs" />
+    <Compile Include="Chart\Internal\XYAxisBasePanel.cs" />
+    <Compile Include="Chart\Internal\XYAxisDisplayUnitTitle.cs" />
+    <Compile Include="Chart\Internal\XYAxisElementsPanel.cs" />
+    <Compile Include="Chart\Internal\XYAxisGridlinesPanel.cs" />
+    <Compile Include="Chart\Internal\XYAxisTickMarksPanel.cs" />
+    <Compile Include="Chart\Internal\XYAxisTitle.cs" />
+    <Compile Include="Chart\Internal\IRequireMarginOnEdges.cs" />
+    <Compile Include="Chart\Internal\XYLabelsPanel.cs" />
+    <Compile Include="Chart\Internal\ICategoryBinder.cs" />
+    <Compile Include="Chart\Internal\ITreeSource.cs" />
+    <Compile Include="Chart\Internal\ChartArea.cs" />
+    <Compile Include="Chart\Internal\IXYChartAreaDataVirtualizer.cs" />
+    <Compile Include="Chart\Internal\LayerProvider.cs" />
+    <Compile Include="Chart\Internal\LayerType.cs" />
+    <Compile Include="Chart\Internal\XYChartArea.cs" />
+    <Compile Include="Chart\Internal\Edge.cs" />
+    <Compile Include="Chart\Internal\EdgePanel.cs" />
+    <Compile Include="Chart\Internal\SelectionPanel.cs" />
+    <Compile Include="Chart\Internal\ISelectableView.cs" />
+    <Compile Include="Chart\Internal\UpdatableGrid.cs" />
+    <Compile Include="Chart\Internal\Category.cs" />
+    <Compile Include="Chart\Internal\ShadowCategory.cs" />
+    <Compile Include="Chart\Internal\CategoryCollection.cs" />
+    <Compile Include="Chart\Internal\ICategoryScale.cs" />
+    <Compile Include="Chart\Internal\Scale.cs" />
+    <Compile Include="Chart\Internal\Scale`3.cs" />
+    <Compile Include="Chart\Internal\CategoryScale.cs" />
+    <Compile Include="Chart\Internal\DateTimeScale.cs" />
+    <Compile Include="Chart\Internal\DateTimeSequence.cs" />
+    <Compile Include="Chart\Internal\NumericScale.cs" />
+    <Compile Include="Chart\Internal\NumericSequence.cs" />
+    <Compile Include="Chart\Internal\NumericRangeInfo.cs" />
+    <Compile Include="Chart\Internal\RelativeSequence.cs" />
+    <Compile Include="Chart\Internal\ScaleViewChangedArgs.cs" />
+    <Compile Include="Chart\Internal\ScaleDefaults.cs" />
+    <Compile Include="Chart\Internal\ScaleElementPlacement.cs" />
+    <Compile Include="Chart\Internal\ScaleElementGroup.cs" />
+    <Compile Include="Chart\Internal\ScaleElementKind.cs" />
+    <Compile Include="Chart\Internal\ScaleElementDefinition.cs" />
+    <Compile Include="Chart\Internal\LabelDefinition.cs" />
+    <Compile Include="Chart\Internal\TickmarkDefinition.cs" />
+    <Compile Include="Chart\Internal\GridlineDefinition.cs" />
+    <Compile Include="Chart\Internal\StriplineDefinition.cs" />
+    <Compile Include="Chart\Internal\RangeDefinition.cs" />
+    <Compile Include="Chart\Internal\ScalePosition.cs" />
+    <Compile Include="Chart\Internal\IAppearanceProvider.cs" />
+    <Compile Include="Chart\Internal\DataPoint.cs" />
+    <Compile Include="Chart\Internal\XYDataPoint.cs" />
+    <Compile Include="Chart\Internal\PointDataPoint.cs" />
+    <Compile Include="Chart\Internal\BubbleDataPoint.cs" />
+    <Compile Include="Chart\Internal\ColumnDataPoint.cs" />
+    <Compile Include="Chart\Internal\ColumnLabelPosition.cs" />
+    <Compile Include="Chart\Internal\PointLabelPosition.cs" />
+    <Compile Include="Chart\Internal\DataPointViewState.cs" />
+    <Compile Include="Chart\Internal\LineDataPoint.cs" />
+    <Compile Include="Chart\Internal\StackedColumnDataPoint.cs" />
+    <Compile Include="Chart\Internal\Series.cs" />
+    <Compile Include="Chart\Internal\XYSeries.cs" />
+    <Compile Include="Chart\Internal\PointSeries.cs" />
+    <Compile Include="Chart\Internal\BubbleSeries.cs" />
+    <Compile Include="Chart\Internal\BubbleSizeRangeUnitType.cs" />
+    <Compile Include="Chart\Internal\ColumnSeries.cs" />
+    <Compile Include="Chart\Internal\LineSeries.cs" />
+    <Compile Include="Chart\Internal\NullableObject`1.cs" />
+    <Compile Include="Chart\Internal\StackedColumnSeries.cs" />
+    <Compile Include="Chart\Internal\SeriesAttachedPresenter.cs" />
+    <Compile Include="Chart\Internal\SeriesMarkerPresenter.cs" />
+    <Compile Include="Chart\Internal\PointSeriesMarkerPresenter.cs" />
+    <Compile Include="Chart\Internal\BubbleSeriesMarkerPresenter.cs" />
+    <Compile Include="Chart\Internal\SeriesPresenter.cs" />
+    <Compile Include="Chart\Internal\XYSeriesPresenter.cs" />
+    <Compile Include="Chart\Internal\PointSeriesPresenter.cs" />
+    <Compile Include="Chart\Internal\BubbleSeriesPresenter.cs" />
+    <Compile Include="Chart\Internal\SeriesLabelPresenter.cs" />
+    <Compile Include="Chart\Internal\ColumnSeriesLabelPresenter.cs" />
+    <Compile Include="Chart\Internal\ColumnSeriesPresenter.cs" />
+    <Compile Include="Chart\Internal\LineSeriesPresenter.cs" />
+    <Compile Include="Chart\Internal\PointSeriesLabelPresenter.cs" />
+    <Compile Include="Chart\Internal\BubbleSeriesLabelPresenter.cs" />
+    <Compile Include="Chart\Internal\LineSeriesLabelPresenter.cs" />
+    <Compile Include="Chart\Internal\PieSeriesLabelPresenter.cs" />
+    <Compile Include="Chart\Internal\LabelVisibilityManager.cs" />
+    <Compile Include="Chart\Internal\SeriesPresenterEventArgs.cs" />
+    <Compile Include="Chart\Internal\SeriesTooltipPresenter.cs" />
+    <Compile Include="Chart\Internal\SeriesVisualStatePresenter.cs" />
+    <Compile Include="Chart\Internal\DataPointSelectionChangedEventArgs.cs" />
+    <Compile Include="Chart\Internal\DataPointSelectionChangedEventHandler.cs" />
+    <Compile Include="Chart\Internal\DataPointSelectionChangingEventArgs.cs" />
+    <Compile Include="Chart\Internal\DataPointSelectionChangingEventHandler.cs" />
+    <Compile Include="Chart\Internal\StackedColumnSeriesLabelPresenter.cs" />
+    <Compile Include="Chart\Internal\StackedColumnSeriesPresenter.cs" />
+    <Compile Include="Chart\Internal\BarControl.cs" />
+    <Compile Include="Chart\Internal\DataPointView.cs" />
+    <Compile Include="Chart\Internal\PolylineControl.cs" />
+    <Compile Include="Chart\Internal\PolylineSegmentDefinition.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chart\Internal\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AxisView\AxisLabelControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ChartArea\ChartArea.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomPanels\XYChartArea.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TickMarkControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChartCommon\ChartCommon.csproj">
+      <Project>{a3a12b49-12b9-4d63-9372-59b3c16b22d2}</Project>
+      <Name>ChartCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Chart.nuspec" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
